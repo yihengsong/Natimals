@@ -5,8 +5,8 @@ class Natimal(models.Model):
     name = models.CharField(max_length=255)
     name_slug = models.SlugField()
     scientific_name = models.CharField(max_length=255)
-    model_pic1 = models.ImageField(upload_to = 'static/pic_folder/', blank=True, null=True)
-    model_pic2 = models.ImageField(upload_to = 'static/pic_folder/', blank=True, null=True)
+    model_pic1 = models.ImageField(upload_to = 'pic_folder/', blank=True, null=True)
+    model_pic2 = models.ImageField(upload_to = 'pic_folder/', blank=True, null=True)
     status = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     def __unicode__(self):
