@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{{ country.name }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+</head>
+
+<body style="background-image: url(/static/{{ country.model_pic1 }}); background-size: cover">
+    <div id="homeIcon">
+        <a href="/">
+            <div id="brand"> Natimals </div>
+            <div id="name"> Yiheng Song </div>
+        </a>
+    </div>
+    <a href="/map"> <img id="globe" border="0" alt="Globe" src="/static/images/globe.png"> </a>
+    <div id="infoBox">
+        <div id="natName">{{ country.name }}</div>
+        <div id="sciName"> <em>{{ country.scientific_name }}</em> </div>
+        <div id="line"> <hr style="width: 70%"> </div>
+        <div id="description"> {{ country.description }} </div>
+        <div id="status"> IUCN Status: {{ country.status }}</div>
+        <div id="country">{{ country.country }}</div>
+    </div>
+
+
+</body>
+</html>
+

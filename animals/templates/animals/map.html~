@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>NatiWorld</title>
+    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/static/js/manifestinteractive-jqvmap-0380a44/dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/static/js/manifestinteractive-jqvmap-0380a44/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({ map: 'world_en',
+    colors:{
+        "fr": '#4169E1',
+        "us": '#002A6C',
+        "cn": '#AA381E',
+        "es": '#F1BF00',
+        "it": '#009246',
+        "tr": '#E30A17',
+        "de": '#FFCC00',
+        "gb": '#CF142B',
+        "ru": '#FE0000',
+        "my": '#F9DD16'
+    },
+    series: {
+      regions: 
+      [{
+        attribute: 'fill'
+      }]
+    }});
+    });
+    </script>
+    
+  </head>
+  <body>
+        <div id="homeIcon" style="position: absolute; z-index: 1">
+            <a href="index.html">
+                <div id="brand"> Natimals </div>
+                <div id="name"> Yiheng Song </div>
+            </a>
+        </div>
+        <a href="map.html"> <img id="globe" border="0" alt="Globe" src="globe.png" style="position: absolute; z-index: 1; right:0"> </a>
+    <div id="vmap" style="width: 100vw; height: 100vw; max-height: 65vw;"></div>
+  </body>
+</html>

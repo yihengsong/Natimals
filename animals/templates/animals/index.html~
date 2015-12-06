@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Natimals</title>
+    <link rel="stylesheet" type="text/css" href="static/css/mainstyle.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="shortcut icon" href="/static/images/eye.ico"/>
+</head>
+<body id="mainBody">
+    
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(static/images/back1.jpg)'
+  , 'url(static/images/back2.jpg)'
+  , 'url(static/images/back3.jpg)'
+  , 'url(static/images/back4.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+    </script>
+    
+    <div id="homeIcon">
+        <a href="/">
+            <div id="brand"> Natimals </div>
+            <div id="name"> Yiheng Song </div>
+        </a>
+    </div>
+    <a href="/map.html"> <img id="globe" border="0" alt="Globe" src="static/images/globe.png"> </a>
+    <div class="container">
+        <div id="lead">
+        
+        <script>
+$(document).ready(function() {
+   var count = 1;
+   var maxCount = 4;
+   textAnimate(count,maxCount);
+});
+
+function textAnimate(count,maxCount) {
+    $(".text"+count).animate({
+       opacity: '0'
+    }, { duration: 5000, queue: false });
+
+    count++;
+    if (count > maxCount) {count = 1;}
+
+    $(".text"+count).animate({
+       opacity: '1'
+    }, { duration: 5000, queue: false });
+
+    window.setTimeout(function() { textAnimate(count,maxCount) }, 5000);
+}
+    </script>
+        
+            <div class="leadWord"><p class="text1"> Representing The <u>Nation</u> </p> </div>
+            <div class="leadWord"><p class="text2"> Unique And <u>Precious</u> </p> </div>
+            <div class="leadWord"><p class="text3"> <u>Identity</u> & Unity </p> </div>
+            <div class="leadWord"><p class="text4"> Our National <u>Animals</u> </p> </div>
+        </div>
+    </div>
+</body>
+</html>

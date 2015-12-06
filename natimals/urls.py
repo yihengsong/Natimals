@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from animals import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.homepage, name='homepage'),
+    url(r'^map/$', views.mappage, name='mappage'),
+    url(r'^map/country/(?P<country_slug>[\w-]+)$', views.countrydetail, name='countrypage'),
 ]
