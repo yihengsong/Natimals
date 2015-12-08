@@ -330,7 +330,7 @@ WorldMap.maps = {};
         window.location = 'country/germany'
         }
         else if (code === 'gb') {
-        window.location = 'country/england'
+        window.location = 'country/unitedkingdom'
         }
         else if (code === 'ru') {
         window.location = 'country/russia'

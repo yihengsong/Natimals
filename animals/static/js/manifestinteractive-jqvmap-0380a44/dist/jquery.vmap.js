@@ -148,15 +148,15 @@ var WorldMap = function (params) {
       if (!regionMouseOverEvent.isDefaultPrevented()) {
         map.highlight(code, containerPath);
       }
-      if (params.showTooltip) {
-        map.label.text(mapData.pathes[code].name);
-        jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
+//      if (params.showTooltip) {
+//        map.label.text(mapData.pathes[code].name);
+//        jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
 
         if (!labelShowEvent.isDefaultPrevented()) {
           map.label.show();
           map.labelWidth = map.label.width();
           map.labelHeight = map.label.height();
-        }
+//        }
       }
     } else {
       map.unhighlight(code, containerPath);

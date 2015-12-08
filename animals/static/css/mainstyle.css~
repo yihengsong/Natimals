@@ -52,7 +52,7 @@ body {
     clear: both;
     position: relative;
     text-align: center;
-    top: 40%;
+    padding-top: 40%;
 }
 
 .leadWord {
@@ -149,3 +149,25 @@ a:active {
     border-color: white;
     padding: 0.2vw;
 }
+
+#footer {
+    font-family: Georgia;
+    color: white;
+    clear: both;
+    text-align: center;
+    font-size: 1.2vw;
+    padding-top: 12%;
+}
+
+#footer2 {
+    font-family: Georgia;
+    color: white;
+    clear: both;
+    text-align: center;
+    font-size: 1.2vw;
+    position: relative; 
+    z-index: 2; 
+    top:-2vw;
+}
+
+

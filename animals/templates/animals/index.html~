@@ -37,7 +37,7 @@ header.css('background-image', backgrounds[0]);
             <div id="name"> Yiheng Song </div>
         </a>
     </div>
-    <a href="/map.html"> <img id="globe" border="0" alt="Globe" src="static/images/globe.png"> </a>
+    <a href="/map"> <img id="globe" border="0" alt="Globe" src="static/images/globe.png"> </a>
     <div class="container">
         <div id="lead">
         
@@ -70,5 +70,8 @@ function textAnimate(count,maxCount) {
             <div class="leadWord"><p class="text4"> Our National <u>Animals</u> </p> </div>
         </div>
     </div>
+    <div id="footer">
+        &copy 2015 | Yiheng Song | <a href="map"> Map </a> |  402-470-7881 | <a href="mailto:YihengUniApp@Gmail.com"> YihengUniApp@Gmail.Com</a>
+    </div>  
 </body>
 </html>
