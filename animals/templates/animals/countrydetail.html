@@ -5,9 +5,32 @@
     <title>{{ country.name }}</title>
     <link rel="stylesheet" type="text/css" href="/static/css/mainstyle.css">
     <link rel="shortcut icon" href="/static/images/eye.ico"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
-<body style="background-image: url(/static/{{ country.model_pic1 }}); background-size: cover">
+    <script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(/static/{{ country.model_pic1 }})'
+  , 'url(/static/{{ country.model_pic2 }})'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+    </script>
+
+<body>
     <div id="homeIcon">
         <a href="/">
             <div id="brand"> Natimals </div>
