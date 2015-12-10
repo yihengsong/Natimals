@@ -52,7 +52,7 @@ body {
     clear: both;
     position: relative;
     text-align: center;
-    padding-top: 40%;
+    padding-top: 50vw;
 }
 
 .leadWord {
@@ -156,7 +156,7 @@ a:active {
     clear: both;
     text-align: center;
     font-size: 1.2vw;
-    padding-top: 12%;
+    padding-top: 10vw;
 }
 
 #footer2 {
